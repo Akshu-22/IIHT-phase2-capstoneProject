@@ -1,0 +1,32 @@
+.navhead{
+    width: 100%;
+}
+li{
+    margin-right: 50px;
+}
+button{
+    margin-right: 50px;
+}
+
+img{
+    width: 200px;
+    height:150px;
+}
+.card{
+    margin-top: 30px;
+    margin-left:26px;
+    padding: 10px;
+    background-color: beige; 
+    border: 1px solid burlywood;
+}
+.header{
+    height: 50px;
+    margin-top: 10px;
+    background-color: bisque;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    
+  }
+ 
+

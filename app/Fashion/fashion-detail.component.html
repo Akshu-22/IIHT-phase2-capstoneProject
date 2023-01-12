@@ -1,0 +1,15 @@
+<div class="section">
+    <div *ngIf="fashion.length">
+        <div class="row">
+            <div *ngFor="let fash of fashion; let i = index " class="card" style="width:14rem;">
+                     
+                        <img mat-card-image [src]='fash.image'
+                        height="150px"
+                        width="200px">   
+                                      
+            </div>
+            
+        </div>
+    </div>
+</div>
+

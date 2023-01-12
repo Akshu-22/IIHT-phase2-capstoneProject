@@ -1,0 +1,61 @@
+[{
+    "name":"Tomato",
+    "image":"../../assets/images/tomato.jpg" ,
+    "price":40  
+},
+{  
+    "name":"Onion",
+    "image":"../../assets/images/onion.jpg" ,
+    "price":25  
+},
+{  
+    "name":"Potato",
+    "image":"../../assets/images/potato.jpg" ,
+    "price":30  
+},
+{  
+    "name":"Pumpkin",
+    "image":"../../assets/images/pumpkin.jpg" ,
+    "price":50  
+},
+{  
+    "name":"Peas",
+    "image":"../../assets/images/peas.jpg" ,
+    "price":40  
+},
+{  
+    "name":"Red Pepper",
+    "image":"../../assets/images/redpepper.jpg" ,
+    "price":20  
+},
+{  
+    "name":"Cabbage",
+    "image":"../../assets/images/cabbage.jpg" ,
+    "price":60  
+},
+{  
+    "name":"Capsicum",
+    "image":"../../assets/images/capsicum.jpg" ,
+    "price":50  
+},
+{  
+    "name":"Broccoli",
+    "image":"../../assets/images/broccoli.jpg" ,
+    "price":100  
+},
+{  
+    "name":"Mushroom",
+    "image":"../../assets/images/mushroom.jpg" ,
+    "price":60  
+},
+{  
+    "name":"Bitter Gourd",
+    "image":"../../assets/images/bittergourd.jpg" ,
+    "price":80  
+},
+{  
+    "name":"Lady Finger",
+    "image":"../../assets/images/LadyFinger.jpg" ,
+    "price":80  
+}
+]

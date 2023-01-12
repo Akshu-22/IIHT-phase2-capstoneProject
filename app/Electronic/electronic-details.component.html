@@ -1,0 +1,15 @@
+<div class="section">
+    <div *ngIf="electronic.length">
+        <div class="row">
+            <div *ngFor="let ele of electronic; let i = index " class="card" style="width:14rem;">
+                     
+                        <img mat-card-image [src]='ele.image'
+                        height="150px"
+                        width="200px">   
+                                      
+            </div>
+            
+        </div>
+    </div>
+</div>
+

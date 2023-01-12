@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<mat-toolbar class="nav" color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>InstaSMart  </span>
+  <span class="example-spacer"></span>
+   <button id="btn" mat-button [matMenuTriggerFor]="menu">Products</button>
+  <mat-menu #menu="matMenu">
+  <button [routerLink]="['fashion']" mat-menu-item>Fashion</button>
+  <button [routerLink]="['electronic']" mat-menu-item>Electronic Device</button>
+  <button [routerLink]="['furniture']" mat-menu-item>Furniture</button>
+  <button  [routerLink]="['kitchen']" mat-menu-item>Home & Kitchen</button>
+  </mat-menu> 
+  <button id="btn" [routerLink]="['veges']" mat-raised-button color="primary">vegetables</button>
+  
+  <span class="example-spacer"></span>
+  <a mat-button [routerLink]="['about']" target="_blank">About Us</a>
+  <a mat-button [routerLink]="['contact']" target="_blank">Contact Us</a>
+  
+  <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+    <input type="text" placeholder="Search.." name="search2">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  <button mat-raised-button color="primary">Login</button>
+  
+  <button [routerLink]="['home']" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with home icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button withheart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+  <button mat-icon-button class="'material-icons" aria-label="Example icon-button with shopping_cart icon">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</mat-toolbar>
+<!-- <app-home-page></app-home-page> -->
+<!--  <app-fashion></app-fashion> -->
+<router-outlet></router-outlet>

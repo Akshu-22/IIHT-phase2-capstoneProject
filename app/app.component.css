@@ -1,0 +1,39 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  #btn{
+    margin-left: 5px;
+
+  }
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+    height: 30px;
+    color: black;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+     background: rgb(57, 57, 162); 
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    height: 30px;
+  }
+  
+  form.example button:hover {
+    background: rgb(57, 57, 162);
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
