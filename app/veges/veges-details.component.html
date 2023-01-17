@@ -1,16 +1,36 @@
+<div class="header">
+    <label style="font-size: 20px;margin-left: 500px;">Vegetable List</label>
+     <input id="in" type="text" placeholder="search.." [(ngModel)]="filterValue"/>
+    <button id="cart2" mat-raised-button color="accent" (click)="toggle()">Admin</button>
+</div> 
 <div class="section">
     <div *ngIf="vegetable.length">
         <div class="row">
-            <div *ngFor="let veges of vegetable; let i = index " class="card" style="width:14rem;">
-                <mat-card-header style="font-weight:bold ;font-size: 25px;text-align: center;">{{veges.name}}</mat-card-header><br>    
+            <div *ngFor="let veges of vegetable | filter:filterValue; let i = index  " class="card" style="width:14rem;">
+                <mat-card-header style="font-weight:bold ;font-size: 25px;text-align: center;">{{veges.name}}</mat-card-header><br> 
+                
                         <img mat-card-image [src]='veges.image'
                         height="150px"
                         width="200px"><br> 
-                <mat-card-footer>Price: {{veges.price}} Per/Kg </mat-card-footer>        
+                <mat-card-footer style="text-align: center;">Price: {{veges.price |currency:'INR'}} Per/Kg </mat-card-footer> 
+                <div class="btn" *ngIf="show">
+                    <button (click)="newVegetable()" mat-icon-button color="black" aria-label="Example icon button with a add icon">
+                        <mat-icon>add</mat-icon>
+                      </button> 
+                <button [routerLink]="['addVeges']" (click)="vegetableSelected(veges)" mat-icon-button color="black" aria-label="Example icon button with a edit icon">
+                    <mat-icon>edit</mat-icon>
+                  </button> 
+                  <button (click)="deleteVegetable(veges)" mat-icon-button color="black" aria-label="Example icon button with a delete icon">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div> 
+                <div><button id="cart" (click)=addtocart(veges) mat-raised-button color="accent">Add To Cart</button></div>      
                                       
             </div>
             
         </div>
     </div>
 </div>
+<router-outlet></router-outlet>
+
 

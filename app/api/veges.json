@@ -1,61 +1,155 @@
 [{
+    "id":101,
     "name":"Tomato",
     "image":"../../assets/images/tomato.jpg" ,
     "price":40  
 },
 {  
+    "id":102,
+    "name":"Apple",
+    "image":"../../assets/images/apple.jpg" ,
+    "price":110  
+},
+{  
+    "id":103,
     "name":"Onion",
     "image":"../../assets/images/onion.jpg" ,
     "price":25  
 },
 {  
+    "id":104,
+    "name":"Orange",
+    "image":"../../assets/images/orange.jpg" ,
+    "price":100  
+},
+{  
+    "id":105,
     "name":"Potato",
     "image":"../../assets/images/potato.jpg" ,
     "price":30  
 },
 {  
+    "id":106,
+    "name":"Banana",
+    "image":"../../assets/images/banana.jpg" ,
+    "price":60 
+},
+
+{  
+    "id":107,
     "name":"Pumpkin",
     "image":"../../assets/images/pumpkin.jpg" ,
     "price":50  
 },
 {  
+    "id":108,
+    "name":"Mango",
+    "image":"../../assets/images/mango.jpg" ,
+    "price":400  
+},
+{  
+    "id":109,
     "name":"Peas",
     "image":"../../assets/images/peas.jpg" ,
     "price":40  
 },
 {  
+    "id":110,
+    "name":"Grapes",
+    "image":"../../assets/images/grapes.jpg" ,
+    "price":180 
+},
+ {  
+    "id":111,
     "name":"Red Pepper",
     "image":"../../assets/images/redpepper.jpg" ,
     "price":20  
 },
 {  
+    "id":112,
+    "name":"Watermelon",
+    "image":"../../assets/images/watermelon.jpg" ,
+    "price":150 
+},
+{  
+    "id":113,
     "name":"Cabbage",
     "image":"../../assets/images/cabbage.jpg" ,
     "price":60  
 },
 {  
+    "id":114,
+    "name":"Strawberry",
+    "image":"../../assets/images/strawberry.jpg" ,
+    "price":300  
+},
+{  
+    "id":115,
     "name":"Capsicum",
     "image":"../../assets/images/capsicum.jpg" ,
     "price":50  
 },
 {  
+    "id":116,
     "name":"Broccoli",
     "image":"../../assets/images/broccoli.jpg" ,
     "price":100  
 },
 {  
+    "id":117,
     "name":"Mushroom",
     "image":"../../assets/images/mushroom.jpg" ,
     "price":60  
 },
 {  
+    "id":118,
     "name":"Bitter Gourd",
     "image":"../../assets/images/bittergourd.jpg" ,
     "price":80  
 },
 {  
+    "id":119,
     "name":"Lady Finger",
     "image":"../../assets/images/LadyFinger.jpg" ,
+    "price":70 
+},
+{  
+    "id":120,
+    "name":"Eggplant",
+    "image":"../../assets/images/eggplant.jpg" ,
+    "price":100 
+},
+{  
+    "id":121,
+    "name":"Cauliflower",
+    "image":"../../assets/images/cauliflower.jpg" ,
     "price":80  
-}
+},
+{  
+    "id":122,
+    "name":"Carrot",
+    "image":"../../assets/images/carrot.jpg" ,
+    "price":60  
+},
+
+{  
+    "id":123,
+    "name":"Pappaya",
+    "image":"../../assets/images/papaya.jpg" ,
+    "price":100  
+},
+
+
+{  
+    "id":124,
+    "name":"Kiwi",
+    "image":"../../assets/images/kiwi.jpg" ,
+    "price":180  
+},
+{  
+    "id":125,
+    "name":"Cherry",
+    "image":"../../assets/images/cherry.jpg" ,
+    "price":250 
+} 
 ]

@@ -1,7 +1,7 @@
-<div class="card">
+<!-- <div class="card">
     <div class="card-header">{{pageTitle}}</div>
 <div class="card-body" id="main">
-    
+
 <form  #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
 
 <div class="form-group">
@@ -22,4 +22,50 @@
 </div>
 </form>
 </div>
-</div>
+</div> -->
+
+
+<div class="container">
+    <div style="text-align:center">
+      <h1>Login Here</h1>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="../../assets/images/login.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form action="/action_page.php"  #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+
+          <!-- Username Input and Validation -->
+
+          <label for="fname">Enter Username:</label>
+          <input type="text" name="userName" id="userName" placeholder="Your name.." #userName="ngModel" ngModel class="form-control" required>
+
+          <div *ngIf="userName">
+            <div  *ngIf="!userName.valid && (userName.dirty || userName.touched)">
+            <div [hidden]="!userName.errors?.['required']">userName is required</div>
+            </div>
+            </div>
+
+          <!-- Password Input and Validation -->
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Your password.." #password="ngModel" ngModel class="form-control" required><br>
+
+          <div *ngIf="password">
+            <div  *ngIf="!password.valid && (password.dirty || password.touched)">
+            <div [hidden]="!password.errors?.['required']">Password is required</div>
+            </div>
+            </div>
+
+          <!-- Cancel Button -->
+
+          <a class="btn btn-info" (click)="cancel()">Cancel</a>
+
+           <!-- Disable Login Button -->
+
+          <button id="btn" class="btn btn-success" [disabled]="!loginForm.valid">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>

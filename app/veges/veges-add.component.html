@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="head"> <h2 class="text-center">{{pageTitle}}</h2> </div>
+  <div class="col-md-6 user-container" id="card">
+     
+      <form [formGroup]="addVegetable" (ngSubmit)="saveVegetable(vegetable)">
+        <div class="form-group">
+          <label for="name">Vegetable Name:</label>
+          <input (blur)="blur()" type="text" formControlName="name"  name="name" class="form-control" id="name">
+        </div>
+
+        <div *ngIf="name">
+        <div  *ngIf="!name.valid && (name.dirty || name.touched)">
+        <div [hidden]="!name.errors?.['required']">Name is required</div>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label for="category">
+              Category
+            </label>
+            <select  name="category" class='form-control' formControlName="category" id="sel">
+              <option selected value="vegetables">Vegetables</option>
+              <option value="fruits">fruits</option>
+            </select>
+          </div>
+  
+  
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <input (blur)="blur()" type="number" formControlName="price"  name="price" class="form-control" id="price">
+        </div>
+
+        <div *ngIf="price">
+        <div  *ngIf="!price.valid && (price.dirty || price.touched)">
+        <div [hidden]="!price.errors?.['required']">Price is required</div>
+        </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <input (blur)="blur()" type="text" formControlName="image" name="image" class="form-control" id="image">
+        </div>
+
+        <div *ngIf="image">
+        <div  *ngIf="!image.valid && (image.dirty || image.touched)">
+        <div [hidden]="!image.errors?.['required']">Image is required</div>
+        </div>
+        </div>
+  
+       <br>
+       <button id="btn" [disabled]='!addVegetable.valid ||!addVegetable.dirty' class="btn btn-success">Save Vegetable</button>
+       
+      </form>
+    </div>
+    <div class='alert alert-danger' *ngIf="errorMessage">
+      Error : {{errorMessage}}
+    </div>
+  </div>
+  
+ 
+  
+  
+  

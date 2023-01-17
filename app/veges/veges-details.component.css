@@ -5,7 +5,7 @@ li{
     margin-right: 50px;
 }
 button{
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 img{
@@ -21,12 +21,21 @@ img{
 }
 .header{
     height: 50px;
+    padding: 10px;
     margin-top: 10px;
     background-color: bisque;
     font-style: italic;
     font-weight: bolder;
-    text-align: center;
     
   }
+  #cart{
+    width: 100%;
+  }
+  #cart2{
+    float: right;
+  }
+ #in{
+    margin-left: 300px;
+ }
  
 
